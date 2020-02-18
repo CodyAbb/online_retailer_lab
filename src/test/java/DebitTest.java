@@ -26,4 +26,9 @@ public class DebitTest {
     public void canGetAccountNumber(){
         assertEquals(975362, debitCard.getAccountNumber());
     }
+
+    @Test
+    public void canGetTransactionFee(){
+        assertEquals(0.01, debitCard.getTransactionFee());
+    }
 }

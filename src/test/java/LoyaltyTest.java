@@ -27,4 +27,9 @@ public class LoyaltyTest {
     public void canGetAccountNumber(){
         assertEquals(975362, loyaltyCard.getAccountNumber());
     }
+
+    @Test
+    public void canGetTransactionFee(){
+        assertEquals(0.00, loyaltyCard.getTransactionFee());
+    }
 }
