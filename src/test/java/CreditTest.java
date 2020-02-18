@@ -10,7 +10,7 @@ public class CreditTest {
 
     @Before
     public void before(){
-        creditCard = new Credit("Tony", "12/25", 746352);
+        creditCard = new Credit("Tony", "12/25", 746352, 2.00);
     }
 
     @Test
@@ -26,5 +26,10 @@ public class CreditTest {
     @Test
     public void canGetAccountNumber(){
         assertEquals(746352, creditCard.getAccountNumber());
+    }
+
+    @Test
+    public void canGetTransactionFee(){
+        assertEquals(0.04, creditCard.getTransactionFee());
     }
 }
